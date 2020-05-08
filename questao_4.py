@@ -19,15 +19,13 @@ def calcula_agua(entrada):
     while sum(entrada) != 0:
 
         lado_esquerdo = 0
-        lado_direito = 0
 
         for i in range(0, num_total):
             if entrada[i] != 0:
                 if lado_esquerdo == 0:
                     lado_esquerdo = i
                 else:
-                    lado_direito = i
-                    total_agua += lado_direito - lado_esquerdo - 1
+                    total_agua += i - lado_esquerdo - 1
                     lado_esquerdo = i
 
         for i in range(0, num_total):

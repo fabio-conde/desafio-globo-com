@@ -34,8 +34,6 @@ def calcula_agua(entrada):
             if entrada[i] != 0:
                 entrada[i] = entrada[i] - 1
 
-    print(entrada)
-
     return total_agua
 
 
